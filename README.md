@@ -25,5 +25,8 @@ GitLab API  --->  Python Poller  --->  Nextcloud Talk Webhook
 * Event filtering rules
 * Multi-tenant support
 
+## Contributing
+Pull requests and feature ideas are welcome.
+
 ## Author
 * Tamir Suliman
