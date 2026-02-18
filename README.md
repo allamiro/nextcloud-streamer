@@ -14,3 +14,6 @@ It tracks:
 GitLab API  --->  Python Poller  --->  Nextcloud Talk Webhook
                    (this script)
 ```
+
+## Author
+* Tamir Suliman
