@@ -15,5 +15,15 @@ GitLab API  --->  Python Poller  --->  Nextcloud Talk Webhook
                    (this script)
 ```
 
+
+
+## Roadmap Ideas
+
+* Docker container image
+* Web UI dashboard
+* Slack / Teams / Email integrations
+* Event filtering rules
+* Multi-tenant support
+
 ## Author
 * Tamir Suliman
