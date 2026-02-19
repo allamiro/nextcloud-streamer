@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  gitlab-poller:
+    build: .
+    container_name: gitlab-poller
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+    environment:
+      - POLL_INTERVAL=300   # change polling interval here (seconds)
