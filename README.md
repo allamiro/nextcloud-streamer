@@ -15,7 +15,17 @@ GitLab API  --->  Python Poller  --->  Nextcloud Talk Webhook
                    (this script)
 ```
 
+## Docker 
 
+```
+docker build -t gitlab-poller .
+docker run -d \
+  --name gitlab-poller \
+  -v "$(pwd)/data:/data" \
+  --env-file .env \
+  -e POLL_INTERVAL=300 \
+  gitlab-poller
+```
 
 ## Roadmap Ideas
 
