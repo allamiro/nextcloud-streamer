@@ -204,7 +204,7 @@ def compact_issue_message(issue: Dict[str, Any], project_name: str) -> str:
     labels = fmt_labels(issue.get("labels"))
     url = issue.get("web_url") or ""
     return (
-        f"🟢📝 ISSUE #{iid} | {project_name} | {title} | {author} | {created_at} | "
+        f"🟢 ISSUE #{iid} | {project_name} | {title} | {author} | {created_at} | "
         f"labels [{labels}] | {md_link('→ View Issue', url)}"
     )
 
@@ -216,7 +216,7 @@ def compact_mr_message(mr: Dict[str, Any], project_name: str) -> str:
     created_at = fmt_utc(mr.get("created_at") or "")
     url = mr.get("web_url") or ""
     return (
-        f"🟣🔀 MR !{iid} | {project_name} | {title} | {author} | {created_at} | "
+        f"🟣 MR !{iid} | {project_name} | {title} | {author} | {created_at} | "
         f"{md_link('→ View MR', url)}"
     )
 
@@ -228,13 +228,13 @@ def compact_commit_message(commit: Dict[str, Any], project_name: str) -> str:
     created_at = fmt_utc(commit.get("created_at") or "")
     url = commit.get("web_url") or ""
     return (
-        f"🟦💾 COMMIT | {project_name} | {title} | {author} | {short_id} | {created_at} | "
+        f"💾 COMMIT | {project_name} | {title} | {author} | {short_id} | {created_at} | "
         f"{md_link('→ View Commit', url)}"
     )
 
 
 def compact_test_message() -> str:
-    return f"🧪✅ TEST OK | GitLab → Nextcloud | {utc_now_iso()}"
+    return f"✅ TEST OK | GitLab → Nextcloud | {utc_now_iso()}"
 
 
 # --------------------- Nextcloud notification ---------------------
